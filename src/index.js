@@ -4,5 +4,9 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+var authors = ["Stealthy Stegosaurus", "Tiny T-Rex", "Ivory Iguanodon"]
+
+ReactDOM.render(<App 
+	allAuthors={authors}
+	/>, document.getElementById('root'));
 registerServiceWorker();

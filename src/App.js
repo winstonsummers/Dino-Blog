@@ -14,7 +14,7 @@ class Post extends Component {
     return (
       <div className="App">
         <h1>{post.title}</h1>
-        <h3>By: {post.author}</h3>
+        {this.props.allAuthors.map( things => <h3>Written By: {things}</h3>)}
         <p>{post.body}</p>
         <h3>Comments:</h3>
         <p>{post.comments[0]}</p>
